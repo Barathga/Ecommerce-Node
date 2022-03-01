@@ -22,7 +22,13 @@ app.get("/users", function(req,res,next){
     res.send("server starts");
 })
 
-app.listen(3005)
+const port = process.env.PORT || 3001;
+
+app.listen(port , function()
+
+{
+console.log("Started")
+});
 
 
 
